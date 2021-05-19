@@ -1,18 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Footer.module.scss";
+import styles from "../styles/Mob.module.scss";
 
-const Footer = () => {
+const NavList = () => {
   return (
-    <div className={styles.footer}>
-      <div className="logo">
-        <Link href="/">
-          <a>
-            <Image src="/Relish-Logo.png" width={90} height={70} alt="logo" />
-          </a>
-        </Link>
-      </div>
-
+    <div className={styles.mob}>
       <ul>
         <Link href="/">
           <a>
@@ -38,12 +29,8 @@ const Footer = () => {
           </a>
         </Link>
       </ul>
-
-      <div id="copy">
-        <p>&copy; Fraser Coast Tourism and Events 2021</p>
-      </div>
     </div>
   );
 };
 
-export default Footer;
+export default NavList;

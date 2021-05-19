@@ -1,0 +1,37 @@
+.mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 10;
+  right: 0;
+  background-color: #3f3531;
+  height: 50vh;
+  width: 90%;
+  z-index: 99;
+  margin-top: 50px;
+  overflow: hidden;
+
+  ul {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    li {
+      padding: 0.6rem 0;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+  }
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
