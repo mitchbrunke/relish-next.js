@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import Sponsors from "../components/Sponsors";
+import TicketCTA from "../components/TicketCTA";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -29,6 +32,42 @@ export default function Home() {
             surrounds idyllic natural environment.
           </p>
         </div>
+      </section>
+
+      <section className={styles.program}>
+        <Link href="./program">
+          <a>
+            <div id={styles.session} className={styles.program_card_container}>
+              <div className={styles.prog_card}>
+                <h2>View Sessions</h2>
+              </div>
+            </div>
+          </a>
+        </Link>
+
+        <div id={styles.music} className={styles.program_card_container}>
+          <div className={styles.prog_card}>
+            <h2>View Live Music</h2>
+          </div>
+        </div>
+
+        <Link href="./program">
+          <a>
+            <div id={styles.food} className={styles.program_card_container}>
+              <div className={styles.prog_card}>
+                <h2>View Food Marquee</h2>
+              </div>
+            </div>
+          </a>
+        </Link>
+      </section>
+
+      <section>
+        <TicketCTA />
+      </section>
+
+      <section>
+        <Sponsors />
       </section>
     </div>
   );
